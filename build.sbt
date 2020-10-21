@@ -4,6 +4,12 @@ version := "0.1"
 
 scalaVersion := "2.13.3"
 
+scalacOptions ++= Seq(
+  "-deprecation",
+  "-feature",
+  "-Ymacro-annotations"
+)
+
 val http4sVersion = "0.21.7"
 val circeVersion = "0.13.0"
 val playVersion = "2.8.2"
